@@ -276,7 +276,7 @@ display(pd.read_csv(ROOT / 'results' / 'test_subgroups.csv').round(3))
 md(r'''
 ### Uncertainty and dependence
 
-Hourly errors are dependent, so treating every hour as an independent sample would be misleading. We estimate a descriptive 95% percentile interval for the **paired MAE improvement over the baseline** using 1,000 seven-day moving-block bootstrap samples, with seed 42. Daily absolute-error sums and observation counts are resampled together for both models; consecutive seven-day blocks preserve local dependence, and missing hourly records are not invented.
+Hourly errors are dependent, so treating every hour as an independent sample would be misleading. Following the block-resampling principle for dependent observations [8], we estimate a descriptive 95% percentile interval for the **paired MAE improvement over the baseline** using 1,000 seven-day moving-block bootstrap samples, with seed 42. Daily absolute-error sums and observation counts are resampled together for both models; consecutive seven-day blocks preserve local dependence, and missing hourly records are not invented.
 
 For each resample, improvement is the baseline's total absolute error divided by its observation count minus the selected model's corresponding ratio. The 2.5th and 97.5th percentiles give the interval. This approximates sampling variability within the observed test period under a local-stationarity assumption. It is not a prediction interval for a future hour or a guarantee for another city or year. Block length is prespecified, and interval sensitivity to other block lengths remains future work.
 ''')
@@ -329,6 +329,7 @@ md(r'''
 5. Scikit-learn developers. *Time-related feature engineering*. https://scikit-learn.org/stable/auto_examples/applications/plot_cyclical_feature_engineering.html. Related work motivating time representations; this project uses its own explicit feature builder, protocol, NumPy solver, controlled grid and analysis.
 6. Scikit-learn developers. *RandomForestRegressor*. https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html. Reference for ensemble behavior and parameters.
 7. NumPy developers. *numpy.linalg.eigvalsh*. https://numpy.org/doc/stable/reference/generated/numpy.linalg.eigvalsh.html. Used to obtain the Hessian spectral bound for the learning rate.
+8. Künsch, H. R. (1989). *The Jackknife and the Bootstrap for General Stationary Observations*. The Annals of Statistics, 17(3), 1217–1241. https://doi.org/10.1214/aos/1176347265. Background for resampling consecutive blocks under dependence; our short historical test period does not establish all asymptotic assumptions.
 
 External documentation accessed 27 October 2026. The NumPy solver, feature builder, validation driver and report were authored for this project with Codex assistance. No external tutorial notebook was copied. See `ASSISTANCE.md` and `SELF_ASSESSMENT.md` for the contribution statement and rubric evidence.
 ''')

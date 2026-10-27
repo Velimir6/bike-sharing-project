@@ -39,7 +39,11 @@ def main():
                                 resources={'metadata': {'path': str(ROOT)}})
         client.on_cell_start = lambda cell, cell_index: print(f'Checking cell {cell_index + 1}/{len(notebook.cells)}', flush=True)
         print('Starting a fresh notebook kernel...', flush=True)
-        client.execute()
+        try:
+            client.execute()
+        finally:
+            if manager.has_kernel:
+                manager.shutdown_kernel(now=True)
     nbformat.validate(notebook)
     errors = [out for cell in notebook.cells if cell.cell_type == 'code'
               for out in cell.outputs if out.output_type == 'error']

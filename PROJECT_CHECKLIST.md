@@ -1,17 +1,18 @@
 # Project completion and assessment checklist
 
-This is a working checklist, not a completed self-assessment. Assessment points are indicative according to the supplied course guidelines.
+Technical work is complete and verified locally. Assessment points are indicative according to the supplied course guidelines. Evidence is mapped in `SELF_ASSESSMENT.md`; publication and submission are still pending.
 
 ## Mandatory requirements
 
-- [ ] At least one Jupyter notebook with English explanations, mathematics, and Python code.
-- [ ] Working code verified by restarting the kernel and running all cells in order.
-- [ ] GitHub repository with at least 10 meaningful commits reflecting real progress.
+- [x] Jupyter notebook with English explanations, mathematics, and Python code.
+- [x] Working code verified by a fresh kernel executing all 12 code cells in order.
+- [x] Local Git history with more than 10 meaningful commits reflecting real progress.
+- [ ] Publish the existing history to a GitHub repository in the user's account.
 - [ ] Repository link submitted before 16:00 on 3 November 2026; deadline timezone must match course instructions.
-- [ ] Sources, dataset license, and any adapted code credited.
-- [ ] Academic integrity and course assistance policy followed.
-- [ ] Safe execution and compliance with applicable legal requirements.
-- [ ] Self-assessment completed; obtain a course template if one exists.
+- [x] Sources, dataset license, related methods and Codex assistance credited.
+- [ ] User review and confirmation of any separate course AI-assistance policy.
+- [x] Public attributed data and local analytical code; no destructive or external messaging actions.
+- [x] Self-assessment completed against all six criteria; adapt to a course template if separately supplied.
 
 ## Assessment evidence
 
@@ -26,22 +27,22 @@ This is a working checklist, not a completed self-assessment. Assessment points 
 
 ## Scientific workflow
 
-- [ ] Obtain the source dataset and retain its documentation and attribution.
-- [ ] Audit schema, dates, missing values, duplicate records, time gaps and distributions.
-- [ ] Distinguish absent time records from confirmed zero-rental hours.
-- [ ] Verify target definition and exclude target-derived columns and unavailable inputs.
-- [ ] Reserve the final chronological test interval before exploratory model comparison.
-- [ ] Perform target-informed exploration and feature design on development data only.
-- [ ] Fit encoders, scalers and other learned preprocessing within each training split.
-- [ ] Evaluate baseline, NumPy linear regression, Ridge and Random Forest under comparable conditions.
-- [ ] Verify gradient numerically and check predictions against a reference implementation.
-- [ ] Compare calendar-only and calendar-plus-weather inputs.
-- [ ] Compare time encodings and document regularization effects.
-- [ ] Report MAE, RMSE, residuals, subgroup performance and training time.
-- [ ] Discuss negative predictions where applicable, temporal dependence, historical coverage, observed-weather assumptions and association versus causation.
-- [ ] Select the final model without using final test results, then evaluate once.
-- [ ] State conclusions supported by results, including unsuccessful hypotheses.
-- [ ] Record the tested environment and verify a complete clean execution.
+- [x] Obtain the source dataset and retain its documentation and attribution.
+- [x] Audit schema, dates, missing values, duplicate records, time gaps and development distributions.
+- [x] Distinguish absent time records from confirmed zero-rental hours.
+- [x] Verify target definition, exclude target-derived columns and state the observed-weather input assumption.
+- [x] Reserve the final chronological test interval before exploratory model comparison.
+- [x] Perform target-informed exploration and feature design on development data only.
+- [x] Fit learned scaling within each training split; use fixed semantic category ranges.
+- [x] Evaluate baseline, NumPy linear regression, Ridge and Random Forest under comparable conditions.
+- [x] Verify gradient numerically and check predictions against a reference implementation.
+- [x] Compare calendar-only and calendar-plus-weather inputs.
+- [x] Compare time encodings and document regularization effects.
+- [x] Report MAE, RMSE, residuals, subgroup performance and training time.
+- [x] Discuss negative predictions, temporal dependence, historical coverage, observed-weather assumptions and association versus causation.
+- [x] Freeze model selection before final evaluation; subsequent execution repeats the same protocol without test-driven tuning.
+- [x] State conclusions supported by results, including an unfavorable first validation fold.
+- [x] Record the tested environment and verify a complete clean execution.
 
 ## Development milestones
 

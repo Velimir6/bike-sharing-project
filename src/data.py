@@ -14,9 +14,10 @@ def load_data(root):
     """Read unchanged source data, verify its checksum, and construct timestamps."""
     raw = Path(root) / 'data' / 'raw'
     manifest = json.loads((raw / 'manifest.json').read_text())
-    content = (raw / 'hour.csv').read_bytes()
-    if hashlib.sha256(content).hexdigest() != manifest['files']['hour.csv']['sha256']:
-        raise ValueError('hour.csv does not match its source checksum')
+    for filename, record in manifest['files'].items():
+        content = (raw / filename).read_bytes()
+        if hashlib.sha256(content).hexdigest() != record['sha256']:
+            raise ValueError(f'{filename} does not match its source checksum')
     df = pd.read_csv(raw / 'hour.csv')
     df['timestamp'] = pd.to_datetime(df['dteday']) + pd.to_timedelta(df['hr'], unit='h')
     return df.sort_values('timestamp').reset_index(drop=True)
