@@ -1,0 +1,8 @@
+{
+  "lower": 13.99577767291877,
+  "upper": 48.07512625667501,
+  "block_days": 7,
+  "repetitions": 1000,
+  "seed": 42,
+  "estimand": "baseline MAE minus selected MAE on paired hourly observations"
+}
