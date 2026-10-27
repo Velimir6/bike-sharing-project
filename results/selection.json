@@ -1,0 +1,13 @@
+{
+  "selected": {
+    "name": "Forest weather leaf=1",
+    "kind": "forest",
+    "encoding": "ordinal",
+    "weather": true,
+    "leaf": 1
+  },
+  "selection_rule": "minimum mean validation MAE; RMSE tie-break",
+  "protocol_sha256": "a17a0df6a26e64bce2e70af71be305cb42da3198f6350a5f649d4c14b731c348",
+  "candidates": 21,
+  "folds": 3
+}
