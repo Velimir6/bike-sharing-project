@@ -18,6 +18,8 @@ md(r'''
 # Modeling Hourly Bike Rental Demand
 ## Linear algebra, optimization and statistical evaluation with real data
 
+**Student:** Velimir Ivanov · **GitHub profile:** [Velimir6](https://github.com/Velimir6)
+
 This project estimates hourly bicycle rentals in Washington, D.C. from calendar and observed weather conditions. It compares a historical baseline, a NumPy implementation of linear regression, Ridge regression and Random Forest. The central question is whether mathematical feature design and nonlinear modeling improve performance on later observations.
 
 The completed experiment selects a 120-tree Random Forest using chronological validation. On the reserved October–December 2012 period, it achieves an MAE of **48.04 rentals per hour**, compared with **79.95** for the historical baseline. The result is conditional on observed weather and is not a claim of deployable advance forecasting accuracy. Peak-hour errors remain substantially larger than overall errors.

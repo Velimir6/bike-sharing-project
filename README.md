@@ -1,5 +1,7 @@
 # Modeling Hourly Bike Rental Demand
 
+**Student:** Velimir Ivanov · **GitHub profile:** [Velimir6](https://github.com/Velimir6)
+
 A mathematics and Python course project using the UCI Bike Sharing dataset. The English notebook combines mathematical derivations, a NumPy gradient-descent implementation, chronological model selection and a held-out evaluation.
 
 ## Research question
