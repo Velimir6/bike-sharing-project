@@ -1,13 +1,13 @@
 # Project completion and assessment checklist
 
-Technical work is complete and verified locally. Assessment points are indicative according to the supplied course guidelines. Evidence is mapped in `SELF_ASSESSMENT.md`; publication and submission are still pending.
+Technical work is complete and verified locally. The project and its full history are published at https://github.com/Velimir6/bike-sharing-project. Assessment points are indicative according to the supplied course guidelines. Evidence is mapped in `SELF_ASSESSMENT.md`; course submission is still pending confirmation.
 
 ## Mandatory requirements
 
 - [x] Jupyter notebook with English explanations, mathematics, and Python code.
 - [x] Working code verified by a fresh kernel executing all 12 code cells in order.
 - [x] Local Git history with more than 10 meaningful commits reflecting real progress.
-- [ ] Publish the existing history to a GitHub repository in the user's account.
+- [x] Publish the existing history to https://github.com/Velimir6/bike-sharing-project, preserving the user's pre-existing commits.
 - [ ] Repository link submitted before 16:00 on 3 November 2026; deadline timezone must match course instructions.
 - [x] Sources, dataset license, related methods and Codex assistance credited.
 - [ ] User review and confirmation of any separate course AI-assistance policy.

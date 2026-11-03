@@ -1,5 +1,7 @@
 # Publish the existing project history
 
+Published successfully on 3 November 2026 at https://github.com/Velimir6/bike-sharing-project. The original project history and the two pre-existing GitHub commits were merged without rewriting either history. The instructions below are retained for reference. Course submission is a separate step and has not been confirmed.
+
 The local repository is on branch `main`. Keep its `.git` directory: it contains the substantive development history required by the assignment. Uploading the files as one new commit would discard that history.
 
 Create an empty repository in the intended GitHub account. Do not initialize it with an unrelated README, license or `.gitignore`. Then, from this project folder, add its actual URL and push the existing branch:

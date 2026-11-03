@@ -78,4 +78,4 @@ Additional mathematical and software references appear in the notebook. The data
 
 ## Completion checklist
 
-See `PROJECT_CHECKLIST.md` for completed technical checks and the remaining publication/submission steps. Local development history contains more than ten substantive commits. Creating the GitHub repository and submitting its link are separate actions and are not implied by local completion.
+See `PROJECT_CHECKLIST.md` for completed technical checks. The project is published at https://github.com/Velimir6/bike-sharing-project with more than ten substantive development commits preserved. Submitting the repository link through the course platform is a separate action and has not yet been confirmed.

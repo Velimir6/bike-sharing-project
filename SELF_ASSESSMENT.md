@@ -17,7 +17,7 @@ This assessment maps completed evidence to the published rubric. It does not ass
 - Working local execution and meaningful correctness checks: see `results/execution_check.json` and notebook test output.
 - Sources, original data dictionary, attribution and assistance statement: provided.
 - At least ten meaningful Git commits: inspect the included local Git history; preserve it when publishing.
-- GitHub hosting: not yet claimed; a destination in the user's account is required.
+- GitHub hosting: published at https://github.com/Velimir6/bike-sharing-project with the original development history and the user's pre-existing commits preserved.
 - Submission by the course deadline: not yet claimed; the repository link must be submitted before 16:00 on 3 November 2026, in the course's intended timezone.
 - Course-specific self-assessment template or AI rules: none were included in the supplied document; follow any separately provided instructions.
 
